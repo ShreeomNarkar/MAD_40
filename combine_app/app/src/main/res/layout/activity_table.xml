@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TableRow>
+        <TextView
+            android:text="Name"
+            android:padding="10dp"/>
+
+        <EditText
+            android:hint="Enter Name"
+            android:padding="10dp"/>
+    </TableRow>
+
+
+    <TableRow>
+        <TextView
+            android:text="Email"
+            android:padding="10dp"/>
+
+        <EditText
+            android:hint="Enter Email"
+            android:padding="10dp"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Phone"
+            android:padding="10dp"/>
+
+        <EditText
+            android:hint="Enter Phone"
+            android:padding="10dp"/>
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:text="Submit"
+            android:layout_column="1">
+
+        </Button>
+
+    </TableRow>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="0"
+        android:stepSize="1"
+        />
+    <TableRow>
+
+    </TableRow>
+
+</TableLayout>
