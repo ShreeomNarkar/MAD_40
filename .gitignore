@@ -1,0 +1,22 @@
+# Ignore everything
+*
+
+# Allow folders
+!*/
+
+# Keep this file
+!.gitignore
+
+# Java files
+!**/*.java
+
+# XML files
+!**/*.xml
+
+# Drawable folder
+!**/drawable/
+!**/drawable/**
+
+# Values folder
+!**/values/
+!**/values/**
