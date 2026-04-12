@@ -7,16 +7,23 @@
 # Keep this file
 !.gitignore
 
-# Java files
-!**/*.java
+# Keep src structure
+!**/src/
+!**/src/**
 
-# XML files
-!**/*.xml
+# Keep main folder
+!**/src/main/
+!**/src/main/**
 
-# Drawable folder
-!**/drawable/
-!**/drawable/**
+# Keep only java package
+!**/src/main/java/
+!**/src/main/java/com/
+!**/src/main/java/com/example/
+!**/src/main/java/com/example/**
 
-# Values folder
-!**/values/
-!**/values/**
+# Keep res folder
+!**/src/main/res/
+!**/src/main/res/**
+
+# Keep manifest
+!**/src/main/AndroidManifest.xml
