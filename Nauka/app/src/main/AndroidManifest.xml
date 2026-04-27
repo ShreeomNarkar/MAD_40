@@ -12,6 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Nauka">
         <activity
+            android:name=".ViewBookingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddYachtActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin_dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".receipt_activity"
+            android:exported="false" />
+        <activity
+            android:name=".booking"
+            android:exported="false" />
+        <activity
             android:name=".ocean_pearl"
             android:exported="false" />
         <activity

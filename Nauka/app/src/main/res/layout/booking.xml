@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191919"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Departure Time"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/timeChipGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:singleSelection="true"
+            app:selectionRequired="true"
+            app:layout_constraintTop_toBottomOf="@id/title">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/slot1"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:00 AM Departure"
+                app:chipBackgroundColor="#333333"
+                android:textColor="#FFFFFF" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/slot2"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="02:00 PM Departure"
+                app:chipBackgroundColor="#333333"
+                android:textColor="#FFFFFF" />
+        </com.google.android.material.chip.ChipGroup>
+
+        <TextView
+            android:id="@+id/labelG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Guests"
+            android:textColor="#FFFFFF"
+            app:layout_constraintTop_toBottomOf="@id/timeChipGroup"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/row1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/labelG"
+            app:layout_constraintStart_toStartOf="parent">
+            <Button android:id="@+id/btnMinus" android:layout_width="40dp" android:layout_height="40dp" android:text="-" android:backgroundTint="#808E8E"/>
+            <TextView android:id="@+id/txtCount" android:layout_width="50dp" android:layout_height="wrap_content" android:text="1" android:gravity="center" android:textColor="#FFF"/>
+            <Button android:id="@+id/btnPlus" android:layout_width="40dp" android:layout_height="40dp" android:text="+" android:backgroundTint="#808E8E"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/labelN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="Nights"
+            android:textColor="#FFFFFF"
+            app:layout_constraintTop_toTopOf="@id/labelG"
+            app:layout_constraintStart_toEndOf="@id/row1" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/labelN"
+            app:layout_constraintTop_toBottomOf="@id/labelN">
+            <Button android:id="@+id/btnMinusNight" android:layout_width="40dp" android:layout_height="40dp" android:backgroundTint="#808E8E" android:text="-" />
+            <TextView android:id="@+id/txtNightCount" android:layout_width="50dp" android:layout_height="wrap_content" android:gravity="center" android:text="1" android:textColor="#FFF" />
+            <Button android:id="@+id/btnPlusNight" android:layout_width="40dp" android:layout_height="40dp" android:backgroundTint="#808E8E" android:text="+" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/paymentSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@id/row1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scan QR to Pay"
+                android:textColor="#808E8E"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:src="@drawable/payment_qr"
+            app:layout_constraintTop_toBottomOf="@+id/paymentSection"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/totalAmountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Total Bill: ₹650"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/imageView4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#808E8E"
+            android:text="Confirm Details"
+            android:textColor="#191919"
+            app:cornerRadius="12dp"
+            app:layout_constraintTop_toBottomOf="@id/totalAmountText"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

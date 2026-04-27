@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="28dp"
-        android:text="Elite Ocean Yacht"
+        android:text="Loading..."
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -35,21 +35,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="4dp"
-        android:text="Azure Horizon"
+        android:text="Please wait"
         android:textColor="#808E8E"
         android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView3" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:src="@drawable/logo_details"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button2"
@@ -58,15 +48,34 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="12dp"
         android:backgroundTint="#808E8E"
+        android:textColor="@color/white"
         android:text="Yacht"
-        android:textColor="#FFFFFF"
         app:cornerRadius="12dp"
-        app:icon="@drawable/ic_yacht"
-        app:iconTint="#FFFFFF"
-        app:iconPadding="8dp"
-        app:iconSize="18dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="5.0"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/starIcon"
+        app:layout_constraintTop_toTopOf="@+id/button2" />
+
+    <ImageView
+        android:id="@+id/starIcon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginEnd="24dp"
+        android:src="@android:drawable/btn_star_big_on"
+        app:layout_constraintBottom_toBottomOf="@+id/textView14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView14"
+        app:tint="#FFD700" />
 
     <TextView
         android:id="@+id/textView5"
@@ -74,7 +83,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="18dp"
-        android:text="Elite Ocean Yacht"
+        android:text="Elite Ocean"
         android:textColor="#FFFFFF"
         android:textSize="22sp"
         android:textStyle="bold"
@@ -86,7 +95,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:text="(Azure Horizon)"
+        android:text="(Series)"
         android:textColor="#808E8E"
         app:layout_constraintBottom_toBottomOf="@id/textView5"
         app:layout_constraintStart_toEndOf="@id/textView5" />
@@ -97,148 +106,61 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="10dp"
-        android:text="Capacity: 20 Guests"
+        android:text="Capacity: --"
         android:textColor="#D9D9D9"
-        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView5" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/amenityLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:text="Amenities"
         android:textColor="#FFFFFF"
-        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView7" />
 
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/button4"
-        android:layout_width="115dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="12dp"
-        android:backgroundTint="#000000"
-        android:text="Sun Deck"
-        android:textColor="#FFFFFF"
-        android:textSize="11dp"
-        app:cornerRadius="10dp"
-        app:icon="@drawable/ic_sun_deck"
-        app:iconTint="#808E8E"
-        app:iconPadding="4dp"
-        app:iconSize="14dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView8"
-        app:strokeColor="#808E8E"
-        app:strokeWidth="1dp" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/button3"
-        android:layout_width="115dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="12dp"
-        android:backgroundTint="#000000"
-        android:text="Jacuzzi"
-        android:textColor="#FFFFFF"
-        android:textSize="11dp"
-        app:cornerRadius="10dp"
-        app:icon="@drawable/ic_bath"
-        app:iconTint="#808E8E"
-        app:iconPadding="4dp"
-        app:iconSize="14dp"
-        app:layout_constraintStart_toEndOf="@id/button4"
-        app:layout_constraintTop_toBottomOf="@id/textView8"
-        app:strokeColor="#808E8E"
-        app:strokeWidth="1dp" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/button5"
-        android:layout_width="115dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="12dp"
-        android:backgroundTint="#000000"
-        android:text="BBQ Grill"
-        android:textColor="#FFFFFF"
-        android:textSize="11dp"
-        app:cornerRadius="10dp"
-        app:icon="@drawable/ic_bbq"
-        app:iconTint="#808E8E"
-        app:iconPadding="4dp"
-        app:iconSize="14dp"
-        app:layout_constraintStart_toEndOf="@id/button3"
-        app:layout_constraintTop_toBottomOf="@id/textView8"
-        app:strokeColor="#808E8E"
-        app:strokeWidth="1dp" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/button6"
-        android:layout_width="115dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="12dp"
-        android:backgroundTint="#000000"
-        android:text="Wi-fi"
-        android:textColor="#FFFFFF"
-        android:textSize="11dp"
-        app:cornerRadius="10dp"
-        app:icon="@drawable/ic_wifi"
-        app:iconTint="#808E8E"
-        app:iconPadding="4dp"
-        app:iconSize="14dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button4"
-        app:strokeColor="#808E8E"
-        app:strokeWidth="1dp" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/detailsAmenityGroup"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="18dp"
-        android:text="Description"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button6" />
+        app:layout_constraintTop_toBottomOf="@id/amenityLabel" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
         android:lineSpacingExtra="4dp"
-        android:text="A premium luxury yacht crafted for elegant ocean cruises, private gatherings, and unforgettable journeys on the water."
+        android:text="Loading description..."
         android:textColor="#808E8E"
         android:textSize="13sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView9" />
-
+        app:layout_constraintTop_toBottomOf="@id/detailsAmenityGroup" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/priceCard"
         android:layout_width="0dp"
-        android:layout_height="110dp"
+        android:layout_height="100dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="18dp"
         android:layout_marginEnd="20dp"
+        android:layout_marginBottom="24dp"
         app:cardBackgroundColor="#808E8E"
         app:cardCornerRadius="18dp"
-        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView10">
+        app:layout_constraintStart_toStartOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -246,85 +168,28 @@
             android:padding="18dp">
 
             <TextView
-                android:id="@+id/textView11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Price"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
                 android:id="@+id/textView12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="₹500"
+                android:text="₹0"
                 android:textColor="#000000"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/textView11" />
-
-            <TextView
-                android:id="@+id/textView13"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:text="per person"
-                android:textColor="#191919"
-                app:layout_constraintBottom_toBottomOf="@id/textView12"
-                app:layout_constraintStart_toEndOf="@id/textView12" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button7"
                 android:layout_width="130dp"
                 android:layout_height="48dp"
                 android:text="Book Now"
-                android:textColor="#FFFFFF"
                 app:backgroundTint="#191919"
                 app:cornerRadius="12dp"
+                android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="24dp"
-        android:text="(6.8K reviews)"
-        android:textColor="#808E8E"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="12dp"
-        android:text="4.3"
-        android:textColor="@color/white"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/textView15"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
-    <ImageView
-        android:layout_width="16dp"
-        android:layout_height="16dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="8dp"
-        android:src="@android:drawable/btn_star_big_on"
-        app:layout_constraintEnd_toStartOf="@+id/textView14"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:tint="#FFD700" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

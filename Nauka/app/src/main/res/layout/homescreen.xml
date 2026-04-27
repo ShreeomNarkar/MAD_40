@@ -23,10 +23,9 @@
             android:id="@+id/imageView8"
             android:layout_width="170dp"
             android:layout_height="50dp"
-            android:layout_marginStart="64dp"
             android:layout_marginTop="44dp"
             android:src="@drawable/logohome"
-            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
@@ -41,7 +40,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
@@ -52,7 +50,6 @@
             android:textSize="14sp"
             app:layout_constraintTop_toBottomOf="@id/textView"
             app:layout_constraintStart_toStartOf="parent" />
-
 
         <View
             android:id="@+id/view"
@@ -96,7 +93,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="14dp"
-                    android:text="Elite Ocean Yacht"
+                    android:text="Loading..."
                     android:textColor="@android:color/white"
                     android:textSize="20sp"
                     android:textStyle="bold"
@@ -108,7 +105,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="Town, place"
+                    android:text="Fetching..."
                     android:textColor="#9A9A9A"
                     android:textSize="13sp"
                     app:layout_constraintTop_toBottomOf="@id/cardName1"
@@ -119,7 +116,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="₹500/night"
+                    android:text="₹0"
                     android:textColor="@android:color/white"
                     android:textStyle="bold"
                     app:layout_constraintTop_toBottomOf="@id/cardLocation1"
@@ -130,14 +127,12 @@
                     android:id="@+id/cardReview1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="⭐ 4.3 (6.8K)"
+                    android:text="⭐ 0.0"
                     android:textColor="#9A9A9A"
                     app:layout_constraintTop_toTopOf="@id/cardPrice1"
                     app:layout_constraintEnd_toEndOf="parent" />
-
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
-
 
         <androidx.cardview.widget.CardView
             android:id="@+id/boatCard2"
@@ -171,7 +166,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="14dp"
-                    android:text="Ocean Pearl"
+                    android:text="Loading..."
                     android:textColor="@android:color/white"
                     android:textSize="20sp"
                     android:textStyle="bold"
@@ -183,7 +178,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="Sea View"
+                    android:text="Fetching..."
                     android:textColor="#9A9A9A"
                     android:textSize="13sp"
                     app:layout_constraintTop_toBottomOf="@id/cardName2"
@@ -194,7 +189,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="₹650/night"
+                    android:text="₹0"
                     android:textColor="@android:color/white"
                     android:textStyle="bold"
                     app:layout_constraintTop_toBottomOf="@id/cardLocation2"
@@ -205,14 +200,12 @@
                     android:id="@+id/cardReview2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="⭐ 4.8 (5.1K)"
+                    android:text="⭐ 0.0"
                     android:textColor="#9A9A9A"
                     app:layout_constraintTop_toTopOf="@id/cardPrice2"
                     app:layout_constraintEnd_toEndOf="parent" />
-
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
-
 
         <androidx.cardview.widget.CardView
             android:id="@+id/boatCard3"
@@ -247,7 +240,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="14dp"
-                    android:text="Blue Horizon"
+                    android:text="Loading..."
                     android:textColor="@android:color/white"
                     android:textSize="20sp"
                     android:textStyle="bold"
@@ -259,7 +252,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="Beach Side"
+                    android:text="Fetching..."
                     android:textColor="#9A9A9A"
                     android:textSize="13sp"
                     app:layout_constraintTop_toBottomOf="@id/cardName3"
@@ -270,7 +263,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="₹700/night"
+                    android:text="₹0"
                     android:textColor="@android:color/white"
                     android:textStyle="bold"
                     app:layout_constraintTop_toBottomOf="@id/cardLocation3"
@@ -281,11 +274,10 @@
                     android:id="@+id/cardReview3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="⭐ 5.0 (8.2K)"
+                    android:text="⭐ 0.0"
                     android:textColor="#9A9A9A"
                     app:layout_constraintTop_toTopOf="@id/cardPrice3"
                     app:layout_constraintEnd_toEndOf="parent" />
-
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 

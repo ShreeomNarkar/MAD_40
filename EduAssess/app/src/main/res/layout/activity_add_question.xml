@@ -1,0 +1,44 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FD">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add MCQs"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"/>
+
+        <EditText
+            android:id="@+id/etQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Question..."
+            android:minLines="3"
+            android:layout_marginTop="20dp"
+            android:background="@android:drawable/editbox_background"
+            android:padding="12dp"
+            android:gravity="top"/>
+
+        <EditText android:id="@+id/opt1" android:layout_width="match_parent" android:layout_height="50dp" android:hint="Option A" android:layout_marginTop="15dp"/>
+        <EditText android:id="@+id/opt2" android:layout_width="match_parent" android:layout_height="50dp" android:hint="Option B" android:layout_marginTop="10dp"/>
+        <EditText android:id="@+id/opt3" android:layout_width="match_parent" android:layout_height="50dp" android:hint="Option C" android:layout_marginTop="10dp"/>
+        <EditText android:id="@+id/opt4" android:layout_width="match_parent" android:layout_height="50dp" android:hint="Option D" android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btnSaveQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:text="SAVE QUESTION"
+            android:backgroundTint="@color/primary"/>
+    </LinearLayout>
+</ScrollView>

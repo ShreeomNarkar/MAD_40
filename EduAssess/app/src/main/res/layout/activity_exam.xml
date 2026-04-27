@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:background="@color/bg_light">
+
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10:00"
+        android:layout_alignParentEnd="true"
+        android:textColor="#F44336"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTimer"
+        android:layout_marginTop="40dp"
+        android:text="Question loading..."
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary"/>
+
+    <RadioGroup
+        android:id="@+id/rgOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvQuestion"
+        android:layout_marginTop="30dp">
+
+        <RadioButton android:id="@+id/rb1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Option 1" android:padding="12dp" android:textSize="16sp"/>
+        <RadioButton android:id="@+id/rb2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Option 2" android:padding="12dp" android:textSize="16sp"/>
+        <RadioButton android:id="@+id/rb3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Option 3" android:padding="12dp" android:textSize="16sp"/>
+        <RadioButton android:id="@+id/rb4" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Option 4" android:padding="12dp" android:textSize="16sp"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/accent"
+        android:text="NEXT QUESTION"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:cornerRadius="15dp" />
+
+</RelativeLayout>
